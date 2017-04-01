@@ -1,2 +1,12 @@
 # JOSMforMapathons
 An easy install script for JOSM, preconfigured with some nice plugins
+
+JOSM_tested.cmd will copy JOSM's configuration file to the proper folder
+
+and then invoke a powershell script.
+
+the Powershell script downloads JOSM_tested.jar or JOSM_latest.jar depending on a parameter
+
+and launches it with a setting to make sure it has enough memory available.
+
+Download as ZIP, unzip in its own folder and then double click  on JOSM_tested.cmd
