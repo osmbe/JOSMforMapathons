@@ -2,11 +2,11 @@ param(
   # tested or latest version of JOSM?
   [parameter(Mandatory=$true)]
   [ValidateSet("tested", "latest")]
-  [string]$f = "tested"
+  [string]$josm = "tested"
 )
 
-$url = "https://josm.openstreetmap.de/download/josm-{0}.jar" -f $Encoding
-$output = [Environment]::GetFolderPath("Desktop") + "\josm-{0}.jar" -f $Encoding
+$url = "https://josm.openstreetmap.de/download/josm-{0}.jar" -f $josm
+$output = [Environment]::GetFolderPath("Desktop") + "\josm-{0}.jar" -f $josm
 $start_time = Get-Date
 
 echo $output
