@@ -189,30 +189,6 @@
       <tag key='icon' value='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsSAAALEgHS3X78AAACX0lEQVQ4y32TS09TURSFv3Pu7e2Dl7wqISCiAUNIlBjUhIkzhvqnTJw4cuZPcGSiDERRQkTEhIgSwISqaNNQW8pT6H2f7aAKLYmu4c7Od9beZ20lIvc5KyMgAkqBVvxLxWLxuxIRqS9KEBLmNol+FHBGh7EH+urABuP66HQStGZlZWVen6VGm3kO7j2k+vgZcalyCvZ9gvUc/rslzHH1pN4AkCjG7B+CViRGh0mMDEFsiLd38F4vcPjgEdGXPNR5tuvtxVslvMUP4AXEhZ+I5xMWilSfvsB/u4Rua0XCgHh7B92UaXQgro87NYP7ZBqJY6y+HsR1qU7N4E7PIcaQuD6Kle0i/JxDgqARYKou7qt5CAJUOgXG4C8uE2+V0C3NqEwas72L7u7AynaB1o0jKK3Qba2Y8g7RZh5TrqCz66fDhhHheo54q0T6ziTO1ZFGB6q5iczdSVRTGjl2kTDCHBwRb5UQz8fs7mF294m+5XGfzyJVt86BCOIHODeukfp6G292Ad3Zjk4liQtF7CuXwAjh+gbYNqZcQaLoFODNLWJ+HWEOj7CynSjA7O1DOg2OQ2JoEN3Zjqm6qKQDYYiyrFOAfbEflMIcH6MzaXRrC3G5QrD0CX2uDd3bQ/B+GeUkIIpr+Ug6dYALvbXcGwEFVk+WuLyD1XseqyeLPdiPti3MUZXg4xrJiXFUKlW3gz9fglU7HJVKYlwP3ZTBGR1GOQ7OzbFaS3cHicsDKNs6k8S/edg/xH35hnBtA+fW2J+rBKuzvfbWxDgqkTjpVyKydxYivo94Abqthf9pdXV18TfYtyESB1ygiAAAAABJRU5ErkJggg=='/>
     </map>
     <map>
-      <tag key='name' value='TEC bus lines (2014)'/>
-      <tag key='id' value='TEClines'/>
-      <tag key='type' value='wms'/>
-      <tag key='url' value='http://geodata.tec-wl.be/arcgis/rest/services/Lignes/MapServer/export?f=image&amp;format=png8&amp;transparent=True&amp;SRS={proj}&amp;bboxSR=3857&amp;imageSR=3857&amp;bbox={bbox}&amp;size={width},{height}'/>
-      <tag key='country-code' value='BE'/>
-      <tag key='date' value='2014'/>
-      <tag key='bounds' value='49.5068773,2.8617701,50.888689,6.3966212'/>
-      <tag key='shapes' value='49.5068773,5.4023585,49.5425346,5.819839,49.6208889,6.1714015,49.6884574,5.8582911,49.8534267,5.7704005,50.118324,5.8939967,50.1359319,6.154922,50.3677502,6.3966212,50.4657568,6.2812648,50.7932972,6.1137233,50.7794058,5.7264552,50.8522897,5.7099757,50.8002413,5.6138453,50.7967694,5.4627833,50.7011896,5.2128443,50.803713,4.9491725,50.8071845,4.7596583,50.888689,4.7212062,50.7794058,4.6058497,50.8574913,4.4877467,50.8505557,4.3696437,50.7272762,4.1526637,50.7672474,3.5923609,50.763773,3.2984767,50.8002413,3.0457911,50.7272762,2.8617701,50.6855307,2.8974757,50.7672474,3.0814967,50.6803099,3.1968531,50.526908,3.2874903,50.4762455,3.6720118,50.3169171,3.6857447,50.2730518,3.9906153,50.1746466,4.1499171,50.0866133,4.2405543,49.998418,4.1526637,49.9648613,4.1856227,49.945423,4.5536647,50.0337156,4.6992335,50.0918999,4.8118434,50.01607,4.8420558,49.904754,4.866775,49.8038176,4.8585353,49.7648033,5.0892482,49.6084319,5.3474269,49.5068773,5.4023585'/>
-      <tag key='projections' value='EPSG:3857'/>
-      <tag key='icon' value='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsSAAALEgHS3X78AAABdklEQVQ4y+2TvYsTURTFfzMZY6JJjLzK+IogDxNYsEhAxAgWYiGSQkQXixR+FEvAahtTLFhuZyOk0MbGRiy0kiCohU1AsBBiMUiEZyDFS2DVJI6TedtMJFn8E3LLc87l3HPgwnocI5X9D34DeHEAawnt7xqp3gMXF6AHXAfuAFeAW0AIZGJ+G+gDn4X2vxmpBkAKaAEdoOwYqYrAU+CE0P4GgJHqEdAESkL7fSNVAngLVIBzQvu9fxFsN/V6dPPkpWRl9jPTMl2A8GvyrJ252fBLsjd9matmHpiPv3ZF7fDl34OjzfGn5VzefOjVCR28M3+OAHUArxwAYAOnmt7cw81GNYBE8W8BKKyUOK4W70VD70m83BHaD0anT1k3H93Pd/uPF0IjVeik7Zvjz380Vi6Ihl4JCAAttB8Yqe7aCcwn7iEj1dVY9wF4ZqfO7dE1uQO8AmbehfMPHSPVOyAntF+NndrA1pJJCBwDLNAGGoAbc9/XnwD715l6OfrDFfgAAAAASUVORK5CYII='/>
-    </map>
-    <map>
-      <tag key='name' value='TEC bus stops (2014)'/>
-      <tag key='id' value='TECstops'/>
-      <tag key='type' value='wms'/>
-      <tag key='url' value='http://geodata.tec-wl.be/arcgis/rest/services/Poteaux/MapServer/export?f=image&amp;format=png8&amp;transparent=True&amp;SRS={proj}&amp;bboxSR=3857&amp;imageSR=3857&amp;bbox={bbox}&amp;size={width},{height}'/>
-      <tag key='country-code' value='BE'/>
-      <tag key='date' value='2014'/>
-      <tag key='bounds' value='49.5068773,2.8617701,50.888689,6.3966212'/>
-      <tag key='shapes' value='49.5068773,5.4023585,49.5425346,5.819839,49.6208889,6.1714015,49.6884574,5.8582911,49.8534267,5.7704005,50.118324,5.8939967,50.1359319,6.154922,50.3677502,6.3966212,50.4657568,6.2812648,50.7932972,6.1137233,50.7794058,5.7264552,50.8522897,5.7099757,50.8002413,5.6138453,50.7967694,5.4627833,50.7011896,5.2128443,50.803713,4.9491725,50.8071845,4.7596583,50.888689,4.7212062,50.7794058,4.6058497,50.8574913,4.4877467,50.8505557,4.3696437,50.7272762,4.1526637,50.7672474,3.5923609,50.763773,3.2984767,50.8002413,3.0457911,50.7272762,2.8617701,50.6855307,2.8974757,50.7672474,3.0814967,50.6803099,3.1968531,50.526908,3.2874903,50.4762455,3.6720118,50.3169171,3.6857447,50.2730518,3.9906153,50.1746466,4.1499171,50.0866133,4.2405543,49.998418,4.1526637,49.9648613,4.1856227,49.945423,4.5536647,50.0337156,4.6992335,50.0918999,4.8118434,50.01607,4.8420558,49.904754,4.866775,49.8038176,4.8585353,49.7648033,5.0892482,49.6084319,5.3474269,49.5068773,5.4023585'/>
-      <tag key='projections' value='EPSG:3857'/>
-      <tag key='icon' value='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsSAAALEgHS3X78AAABdklEQVQ4y+2TvYsTURTFfzMZY6JJjLzK+IogDxNYsEhAxAgWYiGSQkQXixR+FEvAahtTLFhuZyOk0MbGRiy0kiCohU1AsBBiMUiEZyDFS2DVJI6TedtMJFn8E3LLc87l3HPgwnocI5X9D34DeHEAawnt7xqp3gMXF6AHXAfuAFeAW0AIZGJ+G+gDn4X2vxmpBkAKaAEdoOwYqYrAU+CE0P4GgJHqEdAESkL7fSNVAngLVIBzQvu9fxFsN/V6dPPkpWRl9jPTMl2A8GvyrJ252fBLsjd9matmHpiPv3ZF7fDl34OjzfGn5VzefOjVCR28M3+OAHUArxwAYAOnmt7cw81GNYBE8W8BKKyUOK4W70VD70m83BHaD0anT1k3H93Pd/uPF0IjVeik7Zvjz380Vi6Ihl4JCAAttB8Yqe7aCcwn7iEj1dVY9wF4ZqfO7dE1uQO8AmbehfMPHSPVOyAntF+NndrA1pJJCBwDLNAGGoAbc9/XnwD715l6OfrDFfgAAAAASUVORK5CYII='/>
-    </map>
-    <map>
       <tag key='name' value='URBIS 2009 aerial imagery'/>
       <tag key='id' value='URBIS2009'/>
       <tag key='type' value='wms'/>
@@ -294,10 +270,6 @@
     <entry value='Bing'/>
     <entry value='Mapbox'/>
     <entry value='http://www.bing.com/maps/'/>
-    <entry value='http://{switch:a,b,c}.tiles.mapbox.com/v4/openstreetmap.map-inh7ifmo/{zoom}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJncjlmd0t3In0.DmZsIeOW-3x-C5eX-wAqTw'/>
-    <entry value='https://tiles.wmflabs.org/bw-mapnik/{zoom}/{x}/{y}.png'/>
-    <entry value='https://{switch:a,b,c}.tile.openstreetmap.org/{zoom}/{x}/{y}.png'/>
-    <entry value='osm-mapnik-black_and_white'/>
     <entry value='standard'/>
   </list>
   <tag key='josm.version' value='11639'/>
@@ -308,12 +280,6 @@
       <tag key='title' value='JOSM default (MapCSS)'/>
       <tag key='ptoken' value='standard'/>
       <tag key='url' value='resource://styles/standard/elemstyles.mapcss'/>
-    </map>
-    <map>
-      <tag key='active' value='false'/>
-      <tag key='title' value='Potlatch 2'/>
-      <tag key='ptoken' value='standard'/>
-      <tag key='url' value='resource://styles/standard/potlatch2.mapcss'/>
     </map>
     <map>
       <tag key='active' value='true'/>
@@ -413,9 +379,6 @@
   </list>
   <tag key='proxy.policy' value='no-proxy'/>
   <tag key='remotecontrol.enabled' value='true'/>
-  <tag key='remotecontrol.https.enabled' value='true'/>
-  <tag key='remotecontrol.https.keyentry.password' value='ptsh20bc2em68vb5kgm8itqoji'/>
-  <tag key='remotecontrol.https.keystore.password' value='o75qbm6seoupa14l0logvuq3tg'/>
   <list key='scripting.commonjs-module-repositories'>
   </list>
   <list key='scripting.engine-jars'>
