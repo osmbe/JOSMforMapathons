@@ -19,10 +19,10 @@ ForEach ($plugin In "OpeningHoursEditor","RoadSigns","apache-commons","apache-ht
  {echo "$pluginsurl$plugin"
  Start-BitsTransfer -Source "$pluginsurl$plugin.jar" -Destination "$pluginfolder\$plugin.jar"}
 
-Start-BitsTransfer -Source "https://github.com/JOSM/Mapillary/releases/download/v1.5.3/Mapillary.jar" -Destination "$pluginfolder\"
-Start-BitsTransfer -Source "http://developer.skobbler.com/public/openstreetcam/OpenStreetCam.jar" -Destination "$pluginfolder\"
-Start-BitsTransfer -Source "https://raw.githubusercontent.com/Gubaer/josm-scripting-plugin/deploy/dist/scripting.jar" -Destination "$pluginfolder\"
-Start-BitsTransfer -Source "https://github.com/JOSM/todo/releases/download/v30100/todo.jar" -Destination "$pluginfolder\"
+(iwr https://github.com/JOSM/Mapillary/releases/download/v1.5.3/Mapillary.jar).Content >"$pluginfolder\Mapillary.jar"
+(iwr http://developer.skobbler.com/public/openstreetcam/OpenStreetCam.jar).Content >"$pluginfolder\OpenStreetCam.jar"
+(iwr https://raw.githubusercontent.com/Gubaer/josm-scripting-plugin/deploy/dist/scripting.jar).Content >"$pluginfolder\scripting.jar"
+(iwr https://github.com/JOSM/todo/releases/download/v30100/todo.jar).Content >"$pluginfolder\todo.jar"
 
 Write-Output "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)"
 
