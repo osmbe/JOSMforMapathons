@@ -18,3 +18,7 @@ If you put the cmd file on a network folder which uses an UNC path, you'll have 
 net use X: \\UNC_PATH_TO_NETWORK_SHARE\JOSM_OpenStreetMapEditor
 
 X:
+
+=====
+
+josm.sh is an adaptation for Linux
