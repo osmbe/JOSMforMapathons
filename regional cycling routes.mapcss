@@ -1,0 +1,250 @@
+meta 
+{
+    title: "Numbered Cycle Node Networks";
+    description: "Highlight Numbered nodes and the routes in between them";
+    version: "1.13_2017-06-28";
+    author: "Polyglot";
+    update: "JanFi";
+    link: "http://josm.openstreetmap.de/wiki/Styles/NumberedCycleNodeNetworks";
+    min-josm-version: "5198";
+}
+
+meta[lang=nl]
+{
+    title: "Fietsknooppuntennetwerken";
+    description: "Doet fietsknooppunten en de routes ertussen duidelijker tot hun recht komen.";
+}
+
+relation[type=route][route=bicycle][network=lcn][operator="Brussels Mobility"]  > way::relation_underlay
+ {z-index: -1;
+  width: 20;
+  color: parent_tag(colour);
+  opacity: 0.5;
+  linecap: none;
+  text-color: red;
+  font-size: 24;
+  text: parent_tag(ref);
+  text-position: line;
+  text-offset-y: 20;} 
+
+
+
+relation[type=route][route=bicycle][network=rcn][!ref]  > way::relation_underlay
+ {z-index: -1;
+  width: 12;
+  color: cyan;
+  opacity: 0.3;
+  linecap: none;
+  text-color: red;
+  font-size: 12;
+  text: parent_tag(note);
+  text-position: line;
+  text-offset-y: 16;} 
+
+node[rcn_ref] 
+ {major-z-index: 10;
+  text-color: green;
+  font-size: 21;
+  text: rcn_ref;
+  text-halo: #aaffcc;
+  text-halo-radius: 2;
+  text-offset-y: 10;}
+  
+node|z13-[information=map]
+ {major-z-index: 10;
+  text-color: red;
+  font-size: 17;
+  text: note;
+  text-halo: #aaffcc;
+  text-halo-radius: 2;}
+
+
+relation[type=network][network=rcn][name*="Hageland Droog Haspengouw"] > node,
+relation[type=network][network=rcn][name*="Brugse Ommeland Noord"] > node,
+relation[type=network][network=rcn][name*="Brabantse Kouters"] > node,
+relation[type=network][network=rcn][name*="Kempen Zuid"] > node,
+relation[type=network][network=rcn][name*="Meetjesland"] > node,
+relation[type=network][network=rcn][name*="Vlaamse Ardennen West"] > node,
+relation[type=network][network=rcn][name="Zuid-Beveland en Tholen"] > node,
+relation[type=network][network=rcn][name="Midden-Brabant"] > node,
+relation[type=network][network=rcn][name="Roermond"] > node,
+relation[type=network][network=rcn][name="VeloTour Hohes Venn - Eifel"] > node,
+relation[type=network][network=rcn][name="Noordoost-Brabant"] > node,
+relation[type=network][network=rcn][name="Temporary network north Friesland4"] > node,
+relation[type=network][network=rcn][name="Noordoost-Fryslân"] > node,
+relation[type=network][network=rcn][name="Zuidwest-Fryslân"] > node,
+relation[type=network][network=rcn][name="Duin- en Bollenstreek"] > node,
+relation[type=network][network=rcn][name="Almere"] > node,
+relation[type=network][network=rcn][name="Noord-Kennemerland"] > node
+
+ {text-color: blue;
+  font-size: 17;
+  text: rcn_ref;
+  text-halo: #aaffcc;
+  text-halo-radius: 2;
+  text-offset-y: 10;}
+
+relation[type=network][network=rcn][name*="Pajottenland"] > node,
+relation[type=network][network=rcn][name*="Hageland"] > node,
+relation[type=network][network=rcn][name*="Brugse Ommeland Zuid"] > node,
+relation[type=network][network=rcn][name*="Kempen West"] > node,
+relation[type=network][network=rcn][name*="Westkust"] > node,
+relation[type=network][network=rcn][name*="Leiestreek Zuidwest"] > node,
+relation[type=network][network=rcn][name*="Waasland West"] > node,
+relation[type=network][network=rcn][name*="Westhoek Zuid"] > node,
+relation[type=network][network=rcn][name="Zeeuws-Vlaanderen West"] > node,
+relation[type=network][network=rcn][name="Schouwen-Duiveland"] > node,
+relation[type=network][network=rcn][name="De Baronie"] > node,
+relation[type=network][network=rcn][name="Regio Eindhoven 'De Peel'"] > node,
+relation[type=network][network=rcn][name="Maastricht"] > node,
+relation[type=network][network=rcn][name="Temporary network north Friesland1"] > node,
+relation[type=network][network=rcn][name="Noordwest-Fryslân"] > node,
+relation[type=network][network=rcn][name="Kop van Overijssel"] > node,
+relation[type=network][network=rcn][name="Drechtsteden"] > node,
+relation[type=network][network=rcn][name="Altena Biesbosch"] > node,
+relation[type=network][network=rcn][name="Reeuwijkse Plassen"] > node,
+relation[type=network][network=rcn][name="Zuid-Kennemerland"] > node,
+relation[type=network][network=rcn][name="Veluwe"] > node
+ {text-color: black;
+  font-size: 17;
+  text: rcn_ref;
+  text-halo: #aaffcc;
+  text-halo-radius: 2;
+  text-offset-y: 10;}
+
+relation[type=network][network=rcn][name*="Cycle node network Comines/Komen"] > node,
+relation[type=network][network=rcn][name*="Le Brabant wallon à vélo"] > node,
+relation[type=network][network=rcn][name*="Pays de Famenne à vélo"] > node,
+relation[type=network][network=rcn][name*="Wallonie Picarde à Vélo"] > node,
+relation[type=network][network=rcn][name*="Groene Gordel Dijleland"] > node,
+relation[type=network][network=rcn][name*="Kempen Noord"] > node,
+relation[type=network][network=rcn][name*="Kust Noord"] > node,
+relation[type=network][network=rcn][name*="Leiestreek"] > node,
+relation[type=network][network=rcn][name*="Meetjesland Noordwest"] > node,
+relation[type=network][network=rcn][name*="Scheldeland West"] > node,
+relation[type=network][network=rcn][name="Zeeuws-Vlaanderen Oost"] > node,
+relation[type=network][network=rcn][name="Land van Peel en Maas"] > node,
+relation[type=network][network=rcn][name="Heerlen"] > node,
+relation[type=network][network=rcn][name="Hoeksche Waard"] > node,
+relation[type=network][network=rcn][name="Alblasserwaard-Vijfheerenlanden"] > node,
+relation[type=network][network=rcn][name="Midden-Fryslân"] > node,
+relation[type=network][network=rcn][name="Texel"] > node,
+relation[type=network][network=rcn][name="Drenthe"] > node,
+relation[type=network][network=rcn][name="IJmond"] > node,
+relation[type=network][network=rcn][name="Gooi en Vechtstreek"] > node,
+relation[type=network][network=rcn][name="Salland"] > node,
+relation[type=network][network=rcn][name="Noordoostpolder-Urk"] > node
+ {text-color: yellow;
+  font-size: 17;
+  text: rcn_ref;
+  text-halo: #aaffcc;
+  text-halo-radius: 2;
+  text-offset-y: 10;}
+
+relation[type=network][network=rcn][name*="Kempen Oost"] > node,
+relation[type=network][network=rcn][name*="Kust Zuid"] > node,
+relation[type=network][network=rcn][name*="Leiestreek Noordwest"] > node,
+relation[type=network][network=rcn][name*="Meetjesland Zuidwest"] > node,
+relation[type=network][network=rcn][name*="Antwerpen Scheldeland"] > node,
+relation[type=network][network=rcn][name*="Vlaamse Ardennen Oost"] > node,
+relation[type=network][network=rcn][name*="Westhoek Oost"] > node,
+relation[type=network][network=rcn][name*="West-Friesland"] > node
+
+ {text-color: cyan;
+  font-size: 17;
+  text: rcn_ref;
+  text-halo: #aaffcc;
+  text-halo-radius: 2;
+  text-offset-y: 10;}
+relation[type=network][network=rcn][name="Cycle node network Comines/Komen"] > node,
+relation[type=network][network=rcn][name="Le Brabant wallon à vélo"] > node,
+relation[type=network][network=rcn][name*="Limburg"] > node,
+relation[type=network][network=rcn][name="Pays de Famenne à vélo"] > node,
+relation[type=network][network=rcn][name*="Leiestreek West"] > node,
+relation[type=network][network=rcn][name*="Kalmthoutse Heide"] > node,
+relation[type=network][network=rcn][name*="Meetjesland Noordoost"] > node,
+relation[type=network][network=rcn][name*="Scheldeland Denderstreek"] > node,
+relation[type=network][network=rcn][name*="Westhoek West"] > node,
+relation[type=network][network=rcn][name="Laag-Holland"] > node,
+relation[type=network][network=rcn][name="Brunssum"] > node,
+relation[type=network][network=rcn][name="Knotenpunktnetzwerk Kreis Heinsberg"] > node,
+relation[type=network][network=rcn][name="De Meierij"] > node,
+relation[type=network][network=rcn][name="De Wijde Biesbosch"] > node,
+relation[type=network][network=rcn][name="Regio Rotterdam"] > node,
+relation[type=network][network=rcn][name="Twente"] > node,
+relation[type=network][network=rcn][name="Haaglanden"] > node,
+relation[type=network][network=rcn][name="Provincie Utrecht"] > node,
+relation[type=network][network=rcn][name="Temporary network north Friesland3"] > node,
+relation[type=network][network=rcn][name="Groningen"] > node,
+relation[type=network][network=rcn][name="Goeree-Overflakkee"] > node
+ {text-color: white;
+  font-size: 17;
+  text: rcn_ref;
+  text-halo: #aaffcc;
+  text-halo-radius: 2;
+  text-offset-y: 10;}
+
+relation[type=network][network=rcn] > node|z13-[name]::name
+ {text-color: black;
+  font-size: 17;
+  text: name;
+  text-halo: #aaffcc;
+  text-halo-radius: 2;
+  text-offset-y: -20;
+  z-index:4.0;}
+relation[type=network][network=rcn][name*="1000 Bornes à Vélo Région Hainaut-Est"] > node,
+relation[type=network][network=rcn][name*="Leiestreek Noordoost"] > node,
+relation[type=network][network=rcn][name*="Voorkempen"] > node,
+relation[type=network][network=rcn][name*="Waasland Oost"] > node,
+relation[type=network][network=rcn][name*="Westhoek Noord"] > node,
+relation[type=network][network=rcn][name="Walcheren / Noord-Beveland"] > node,
+relation[type=network][network=rcn][name="Brabantse Delta"] > node,
+relation[type=network][network=rcn][name="Kempen"] > node,
+relation[type=network][network=rcn][name="Sittard"] > node,
+relation[type=network][network=rcn][name="De Maasduinen"] > node,
+relation[type=network][network=rcn][name="Regio 's Hertogenbosch"] > node,
+relation[type=network][network=rcn][name="Temporary network north Friesland2"] > node,
+relation[type=network][network=rcn][name="Zuidoost-Fryslân"] > node,
+relation[type=network][network=rcn][name="Zuid-Limburg"] > node,
+relation[type=network][network=rcn][name="Voorne-Putten en Rozenburg"] > node,
+relation[type=network][network=rcn][name="Krimpenerwaard"] > node,
+relation[type=network][network=rcn][name="Stadsregio Arnhem Nijmegen"] > node
+ {text-color: purple;
+  font-size: 17;
+  text: rcn_ref;
+  text-halo: #aaffcc;
+  text-halo-radius: 2;
+  text-offset-y: 10;}
+
+relation[type=network][network=rcn][name="Achterhoek"] > node,
+relation[type=network][network=rcn][name="Midden-Delfland"] > node,
+relation[type=network][network=rcn][name="Voorne Putten Rozenburg"] > node,
+relation[type=network][network=rcn][name="Rivierenland"] > node,
+relation[type=network][network=rcn][name="Groene Hart"] > node,
+relation[type=network][network=rcn][name="Vechtdal Overijssel"] > node,
+relation[type=network][network=rcn][name="Kop van Noord-Holland"] > node
+
+ {text-color: magenta;
+  font-size: 17;
+  text: rcn_ref;
+  text-halo: #aaffcc;
+  text-halo-radius: 2;
+  text-offset-y: 10;}
+  
+relation[type=network][network=rcn][name="Amstelland - Meerlanden"] > node,
+relation[type=network][network=rcn][name="IJsseldelta"] > node
+ {text-color: pink;
+  font-size: 17;
+  text: rcn_ref;
+  text-halo: #aaffcc;
+  text-halo-radius: 2;
+  text-offset-y: 10;}
+
+relation[type=network][network=rcn] > node[!rcn_ref]
+ {text-color: red;
+  font-size: 17;
+  text: "In network without rcn_ref tag";
+  text-halo: #aaffcc;
+  text-halo-radius: 2;
+  text-offset-y: 10;}
+
