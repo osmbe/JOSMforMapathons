@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- See https://josm.openstreetmap.de/wiki/Help/Preferences/ImportExport for documentation on this format -->
+<config>
+  <preferences operation="append">
+    <list key='pluginmanager.sites'>
+      <entry value='https://josm.github.io/wikipedia/pluginMasterSnapshots'/>
+    </list>
+  </preferences>
+  <plugin install="wikipedia-dev;pt_assistant-dev" remove="wikipedia;pt_assistant"/>
+</config>
